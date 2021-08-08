@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+}
+
+.chat-box {
+  width: 40%;
+  margin-top: 5%;
+  font-size: 16px;
+  padding: 0;
+  float: right;
+  margin-right: 20%;
+}
+
+.member-box {
+  width: 20%;
+  margin-top: 5%;
+  margin-left: 20%;
+  font-size: 16px;
+  padding: 0;
+  float: left;
+  height: 75.5%;
+  background: #ebebeb;
+  overflow: scroll;
+}
+
+/* Reset top and bottom margins from certain elements */
+.box-header{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.box-header {
+  background: #7CB9E8;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.chat-container {
+  background: #ebebeb;
+  height: 60%;
+  padding: 12px;
+}
+
+.chat-dialogue{
+    background: #ebebeb;
+    height: 80%;
+    padding: 12px;
+    overflow: scroll;
+}
+
+
+.chat-box input[type="text"] {
+  box-sizing: border-box;
+  display: inline;
+  width: 80%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+.chat-box input[type="submit"],#logout{
+    box-sizing: border-box;
+    display: inline;
+    width: 19%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+  }
+
+.chat-box input{
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.chat-box input {
+  border-color: #888;
+}
+
+.chat-box input[type="submit"] ,#logout{
+  background: #7CB9E8;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.chat-box input[type="submit"]:hover ,#logout:hover{
+  background: #7CB9E8;
+}
+
+/* Buttons' focus effect */
+.chat-box input[type="submit"]:focus ,#logout:focus{
+  border-color: #4C4E52;
+}
+
+.chat-bubble{
+    margin-top: 5%;
+    padding: 2%;
+    border-radius:20px;
+}
+
+.bubble-holder{
+  overflow: hidden;
+}
+
+#logout{
+  width: 10%;
+  padding: 10px;
+}
+
+#data{
+  padding: 10%;
+}
+
+#list{
+  text-align: center;
+}

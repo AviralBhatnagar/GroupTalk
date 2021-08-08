@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            Gossp
+        </title>
+        <link rel="stylesheet" href="{{url_for('static',filename='indexCss.css')}}">
+    </head>
+    <body>
+        <button class="create" onclick="window.location.href='/create';">Create Room</button>
+        <div class="login">
+            <h2 class="login-header">Log in</h2>
+            <form action="/login" method="POST" class="login-container">
+              <p><input type="text" name="roomid" placeholder="Room Id" required></p>
+              <p><input type="password" name="password" placeholder="Password" required></p>
+              <p><input type="text" name="username" placeholder="Your Username" required></p>
+              <p><input type="submit" value="Log in"></p>
+            </form>
+          </div>
+    </body>
+</html>
